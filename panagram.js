@@ -8,3 +8,5 @@ for(i=0;i<alpha.length;i++){
 }
 
 console.log(isPan('the quick brown fox jumped over the lazy dogs'))
+
+//run in around 200μs

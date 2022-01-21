@@ -12,3 +12,5 @@ return true}
 
 console.log(unique('monday'))
 console.log(unique('asdfghjklyuiopwehzxcvbn'))
+
+// run in under 100μs
