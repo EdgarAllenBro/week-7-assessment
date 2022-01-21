@@ -1,0 +1,20 @@
+
+function     runtime        array-length 
+
+insert      766.738583 ms   100000
+insert      7.487959 ms     10000
+insert      157.458 μs      1000
+insert      25.625 μs       100
+insert      18.125 μs       10
+
+append      2.133208 ms     100000
+append      550 μs          10000
+append      110.041 μs      1000
+append      54.667 μs       100
+append      48.625 μs       10
+
+unshift seems to be more efficient at the lower numbers in the array, but its increase is more exponetial, almost doubling from 10 to 100, 
+then going up again by around 6 times from 100 to 1000, where as with push its lowest number is higher but went up at mush smaller intervals for each
+increased number. The main difference between these two functions is where the new number is placed. unshift puts the number at the start of the array, 
+where as push adds it at the end, its possible that with how the function interacts with the array, inserting the new number at the start is more
+efficient at lower numbers, but as the number increases, it may take more time due to needing to 'shift' all the other numbers in the array.
