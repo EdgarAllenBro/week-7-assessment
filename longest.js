@@ -12,4 +12,4 @@ const list = ['hello','hi','wow','qwerty']
 
 console.log(longest(list))
 
-// runs in around 100 μs
+// O(n)

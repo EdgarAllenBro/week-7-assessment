@@ -12,4 +12,4 @@ const array = [1,2,-6,3,4,5,7,8,6,10]
 
 console.log(sumZero(array))
 
-//likely runs in 100ish μs
+//O(n)
